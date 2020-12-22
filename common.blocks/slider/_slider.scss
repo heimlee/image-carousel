@@ -1,0 +1,169 @@
+$color-buttons: #000;
+$color-buttons-hover: #cf0a2c;
+
+.section-slider {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-top: 100px;
+}
+
+.slider-wrapper {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.slide {
+  background-position: center;
+  background-size: cover;
+  display: none;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.active {
+  display: flex;
+}
+
+.btn-nav {
+  border-top: 6px solid $color-buttons;
+  cursor: pointer;
+  height: 40px;
+  position: absolute;
+  top: 450px;
+  width: 40px;
+  z-index: 1;
+
+  &:hover {
+    border-top: 6px solid $color-buttons-hover;
+  }
+}
+  
+.btn-nav-prev {
+  left: 5%;
+  border-left: 6px solid $color-buttons;
+  transform: rotate(-45deg);
+  
+  &:hover {
+    border-left: 6px solid $color-buttons-hover;
+  }
+}
+
+.btn-nav-next {
+  right: 5%;
+  border-right: 6px solid $color-buttons;
+  transform: rotate(45deg);
+  
+  &:hover {
+    border-right: 6px solid $color-buttons-hover;
+  }
+}
+
+.slider-control-buttons {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  margin-top: 360px;
+  width: 100%;
+
+  div {
+    background-color: $color-buttons;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    margin: 0 4px;
+    text-align: center;
+    width: 25px;
+
+    &:hover {
+      background-color: $color-buttons-hover;
+    }
+  }
+}
+
+.slider-control-buttons div.active {
+  background-color: $color-buttons-hover;
+}
+
+// RESPONSIVE
+
+@media (min-width: 640px) {
+  .slider-wrapper {
+    width: 400px;
+  }
+
+  .slider-control-buttons {
+    margin-top: 240px;
+    width: 400px;
+  }
+
+  .btn-nav {
+    top: 200px;
+  }
+}
+
+@media (min-width: 840px) {
+  .slider-wrapper {
+    width: 600px;
+  }
+
+  .slider-control-buttons {
+    margin-top: 350px;
+    width: 600px;
+  }
+
+  .btn-nav {
+    top: 250px;
+  }
+}
+
+@media (min-width: 1020px) {
+  .slider-wrapper {
+    width: 700px;
+  }
+
+  .slider-control-buttons {
+    margin-top: 410px;
+    width: 700px;
+  }
+  
+  .btn-nav {
+    top: 290px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .slider-wrapper {
+    width: 1000px;
+  }
+
+  .slider-control-buttons {
+    margin-top: 580px;
+    width: 1000px;
+  }
+  
+  .btn-nav {
+    top: 370px;
+  }
+}
+
+@media (min-width: 1720px) {
+  .slider-wrapper {
+    width: 1300px;
+  }
+
+  .slider-control-buttons {
+    margin-top: 750px;
+    width: 1300px;
+  }
+
+  .btn-nav {
+    top: 450px;
+  }
+}
