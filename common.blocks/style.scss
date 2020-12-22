@@ -1,0 +1,14 @@
+@import 'slider/_slider';
+@import 'slider/_modal';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #666;
+}

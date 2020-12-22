@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Carousel</title>
+  <link rel="stylesheet" href="common.blocks/style.css">
+</head>
+<body>
+  <section class="section-slider">
+    <div class="slider-wrapper">
+      <img src="common.blocks/slider/img/slide-1.jpg" class="slide js-modal-open active" alt="slide-1"></img>
+      <img src="common.blocks/slider/img/slide-2.jpg" class="slide js-modal-open" alt="slide-2"></img>
+      <img src="common.blocks/slider/img/slide-3.jpg" class="slide js-modal-open" alt="slide-3"></img>
+      <img src="common.blocks/slider/img/slide-4.jpg" class="slide js-modal-open" alt="slide-4"></img>
+      <img src="common.blocks/slider/img/slide-5.jpg" class="slide js-modal-open" alt="slide-5"></img>
+    </div>
+
+    <div class="slider-btn-nav">
+      <div id="prev" class="btn-nav btn-nav-prev"></div>
+      <div id="next" class="btn-nav btn-nav-next"></div>
+    </div>
+
+    <div class="slider-control-buttons"></div>
+  </section>
+
+  <div class="modal" id="modal">
+    <div class="modal__dialog">
+      <div class="modal__dialog-header">
+        <div class="modal__dialog-header-close">
+          <button class="js-modal-close modal__dialog-header-close-btn"><span>&times;</span></button>
+        </div>
+      </div>
+      <div class="modal__dialog-content" id="content"></div>
+    </div>
+  </div>
+
+  <script src="common.blocks/slider/slider.js"></script>
+  <script src="common.blocks/slider/modal.js"></script>
+</body>
+</html>
