@@ -10,7 +10,6 @@ document.addEventListener('click', (event) => {
     modal.classList.add('modal--active');
     img.src = target.src;
     content.appendChild(img);
-    
     event.preventDefault();
   }
 
