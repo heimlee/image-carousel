@@ -17,10 +17,10 @@
 .modal--active {
   visibility: visible;
   opacity: 1;
+}
 
-  .modal__dialog{
-    transform: translateY(0);
-  }
+.modal__dialog{
+  transform: translateY(0);
 }
 
 .modal__dialog {
@@ -40,21 +40,21 @@
   position: absolute;
   right: 10px;
   top: 10px;
+}
 
-  &-btn {
-    background: none;
-    border: 0;
-    color: #fff;
-    cursor: pointer;
-    font-size: 60px;
-    line-height: 40px;
-    margin: 0;
-    outline: none;
-    padding: 0;
+.modal__dialog-header-close-btn {
+  background: none;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 60px;
+  line-height: 40px;
+  margin: 0;
+  outline: none;
+  padding: 0;
 
-    &:hover {
-      color: $color-buttons-hover;
-    }
+  &:hover {
+    color: $color-buttons-hover;
   }
 }
 
