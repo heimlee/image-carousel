@@ -198,7 +198,7 @@
   opacity: 1;
 }
 
-.modal--active .modal__dialog {
+.modal__dialog {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
@@ -273,7 +273,7 @@
 }
 
 body {
-  background-color: #666;
+  background-color: #35363ab4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
